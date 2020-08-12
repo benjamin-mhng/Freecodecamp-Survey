@@ -1,165 +1,160 @@
-<DOCTYPE! html>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap">
+  <link rel="stylesheet" href="./style/style.css">
+</head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Survey</title>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap">
-        <link rel="stylesheet" href="./style/style.css">
-    </head>
+<main id="main">
+  <nav>
+    <a href="#Home">Home</a>
+    <a href="#Contact Us">Contact Us</a>
+  </nav>
 
-    <main id="main">
-        <nav>
-            <a href="#Home">Home</a>
-            <a href="#Contact Us">Contact Us</a>
-        </nav>
+  <header>
+    <div>
+      <div>
+        <h1 id="title">Childcare COVID-19 Reopening Parent Survey</h1>
+      </div>
 
-        <header>
-            <div>
-                <div>
-                    <h1 id="title">Childcare COVID-19 Reopening Parent Survey</h1>
-                </div>
+      <div>
+        <p id="description">This survey helps Board of Director find out the best solution for you and your
+          child.</p>
+      </div>
+    </div>
+  </header>
 
-                <div>
-                    <p id="description">This survey helps Board of Director find out the best solution for you and your
-                        child.</p>
-                </div>
+  <body>
+    <div class="container">
+      <form id="survey-form">
+        <div id="personal-info">
+          <label id="name-label">What is your name?</label></br>
+          <input id="name" placeholder=" Enter Your Name" required></br>
+          <label id="email-label">What is your e-mail address?</label></br>
+          <input type="email" id="email" placeholder="Your E-mail Address" required>
+        </div>
+
+        <div class="questions">
+          <section>
+            <label>When would you like your child to return to our center?</label>
+            <div id="list">
+              <input type="radio" name="return-center" value="rn_io">
+              <label for="rn_io">I would return now if you were open.</label></br>
+              <input type="radio" name="return-center" value="ri_saho">
+              <label for="ri_saho">I will return immediately after the stay-at-home or similar orders are
+                lifted.</label></br>
+              <input type="radio" name="return-center" value="saho_lifted">
+              <label for="saho_lifted">If stay-at-home orders are lifted, we’ll return at a later date
+                (e.g. when public schools open, when my office reopens.</label></br>
+              <input type="radio" name="return-center" value="not_sure">
+              <label for="not_sure">I’m not sure.</label></br>
+              <input type="radio" name="return-center" value="not_anticipate">
+              <label for="not_anticipate">I don’t anticipate my child coming back.</label></br>
             </div>
-        </header>
+          </section>
 
-        <body>
-            <div class="container">
-                <form id="survey-form">
-                    <div id="personal-info">
-                        <label id="name-label">What is your name?</label></br>
-                        <input id="name" placeholder=" Enter Your Name" required></br>
-                        <label id="email-label">What is your e-mail address?</label></br>
-                        <input type="email" id="email" placeholder="Your E-mail Address" required>
-                    </div>
-
-                    <div class="questions">
-                        <section>
-                            <label>When would you like your child to return to our center?</label>
-                            <div id="list">
-                                <input type="radio" name="return-center" value="rn_io">
-                                <label for="rn_io">I would return now if you were open.</label></br>
-                                <input type="radio" name="return-center" value="ri_saho">
-                                <label for="ri_saho">I will return immediately after the stay-at-home or similar orders are
-                                lifted.</label></br>
-                                <input type="radio" name="return-center" value="saho_lifted">
-                                <label for="saho_lifted">If stay-at-home orders are lifted, we’ll return at a later date
-                                (e.g. when public schools open, when my office reopens.</label></br>
-                                <input type="radio" name="return-center" value="not_sure">
-                                <label for="not_sure">I’m not sure.</label></br>
-                                <input type="radio" name="return-center" value="not_anticipate">
-                                <label for="not_anticipate">I don’t anticipate my child coming back.</label></br>
-                            </div>
-                        </section>
-
-                        <section>
-                            <label>Where is your child during the now?</label>
-                                <div id="list">
-                                    <input type="radio" name="available" value="home"></input>
-                                    <label for="home">At home with me.</label></br>
-                                    <input type="radio" name="available" value="friend-relative">
-                                    <label for="friend-relative">With a friend or relative.</label></br>
-                                    <input type="radio" name="available" value="at_provider"></input>
-                                    <label for="at_provider">At another provider.</label></br>
-                                </div>
-                        </section>
-
-                        <section>
-                            <label>What concerns do you have about your child returning to our center?</label></br>
-                            <input type="text" placeholder="Enter Your Answer"></input>
-                        </section>
-
-                        <section>
-                            <label>What can we do to make you feel more comfortable with bringing your child back to our
-                                facility?</label></br>
-                            <input type="text" placeholder="Enter Your Answer"></input>
-                        </section>
-
-                        <section>
-                            <label>Would you prefer more remote learning programming while your child is at
-                                home?</label></br>
-                            <input type="text" placeholder="Enter Your Answer"></input>
-                        </section>
-
-                        <section>
-                            <label>Are any of your child’s parents or guardians an essential worker?</label></br>
-                            <input type="text" placeholder="Enter Your Answer"></input>
-                        </section>
-
-                        <section>
-                            <label>Which days of the week would you like childcare? (Select all that apply)</label>
-                            <div id="list">
-                                <input type="checkbox" name="naming_days" value="monday">
-                                <label for="monday">Monday</label></br>
-
-                                <input type="checkbox" name="naming_days" value="tuesday">
-                                <label for="tuesday">Tuesday</label></br>
-
-                                <input type="checkbox" name="naming_days" value="wednesday">
-                                <label for="wednesday">Wednesday</label></br>
-
-                                <input type="checkbox" name="naming_days" value="thursday">
-                                <label for="thursday">Thursday</label></br>
-
-                                <input type="checkbox" name="naming_days" value="wednesday">
-                                <label for="friday">Friday</label></br>
-                            </div>
-                        </section>
-
-                        <section>
-                            <label>What time would you like to drop off your child?</label></br>
-                            <input type="text" placeholder="Enter Your Answers"></input>
-                        </section>
-
-                        <section>
-                            <label>What time would you like to pick up your child?</label></br>
-                            <input type="text" placeholder="Enter Your Answers"></input>
-                        </section>
-
-                        <section>
-                            <label for="pay_fees">To compensate for additional cleaning procedures, safety precautions
-                                and more
-                                staff due to lower teacher/student ratios, would you be willing to pay additional
-                                fees?</label>
-                            <select id="dropdown" name="pay_fees">
-                                <option value="yes">Yes</option>
-                                <option value="no">No</option>
-                            </select></br>
-                            <div id="yes-no">
-                                <label id="number-label"> If you choose <strong>Yes</strong>, how much are you willing to
-                                    pay?</label></br>
-                                <input id="number" type="number" min="0" max="9999999999"
-                                    placeholder="Enter amount you want" step="any" /></br>
-                                <label>If you choose <strong>No</strong>, could you tell us the reason? (Optional)</label></br>
-                                <textarea placeholder="Enter Your Answers"></textarea>
-                            </div>
-                        </section>
-
-                        <section>
-                            <label>Please list any new skills your child has developed during the quarantine (e.g.
-                                eating new
-                                foods, toilet training):</label></br>
-                            <textarea placeholder="Enter your anwsers"></textarea>
-                        </section>
-
-                        <section>
-                            <label>Do you have any questions for us?</label></br>
-                            <textarea placeholder="Enter your anwsers"></textarea>
-                        </section>
-
-                        <button type="submit" id="submit" name="submit-button">Submit</button>
-                    </div>
-                </form>
+          <section>
+            <label>Where is your child during the now?</label>
+            <div id="list">
+              <input type="radio" name="available" value="home"></input>
+              <label for="home">At home with me.</label></br>
+              <input type="radio" name="available" value="friend-relative">
+              <label for="friend-relative">With a friend or relative.</label></br>
+              <input type="radio" name="available" value="at_provider"></input>
+              <label for="at_provider">At another provider.</label></br>
             </div>
-        </body>
-    </main>
+          </section>
 
+          <section>
+            <label>What concerns do you have about your child returning to our center?</label></br>
+            <input type="text" placeholder="Enter Your Answer"></input>
+          </section>
 
-    </html>
+          <section>
+            <label>What can we do to make you feel more comfortable with bringing your child back to our
+              facility?</label></br>
+            <input type="text" placeholder="Enter Your Answer"></input>
+          </section>
+
+          <section>
+            <label>Would you prefer more remote learning programming while your child is at
+              home?</label></br>
+            <input type="text" placeholder="Enter Your Answer"></input>
+          </section>
+
+          <section>
+            <label>Are any of your child’s parents or guardians an essential worker?</label></br>
+            <input type="text" placeholder="Enter Your Answer"></input>
+          </section>
+
+          <section>
+            <label>Which days of the week would you like childcare? (Select all that apply)</label>
+            <div id="list">
+              <input type="checkbox" name="naming_days" value="monday">
+              <label for="monday">Monday</label></br>
+
+              <input type="checkbox" name="naming_days" value="tuesday">
+              <label for="tuesday">Tuesday</label></br>
+
+              <input type="checkbox" name="naming_days" value="wednesday">
+              <label for="wednesday">Wednesday</label></br>
+
+              <input type="checkbox" name="naming_days" value="thursday">
+              <label for="thursday">Thursday</label></br>
+
+              <input type="checkbox" name="naming_days" value="wednesday">
+              <label for="friday">Friday</label></br>
+            </div>
+          </section>
+
+          <section>
+            <label>What time would you like to drop off your child?</label></br>
+            <input type="text" placeholder="Enter Your Answers"></input>
+          </section>
+
+          <section>
+            <label>What time would you like to pick up your child?</label></br>
+            <input type="text" placeholder="Enter Your Answers"></input>
+          </section>
+
+          <section>
+            <label for="pay_fees">To compensate for additional cleaning procedures, safety precautions
+              and more
+              staff due to lower teacher/student ratios, would you be willing to pay additional
+              fees?</label>
+            <select id="dropdown" name="pay_fees">
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select></br>
+            <div id="yes-no">
+              <label id="number-label"> If you choose <strong>Yes</strong>, how much are you willing to
+                pay?</label></br>
+              <input id="number" type="number" min="0" max="9999999999" placeholder="Enter amount you want" step="any" /></br>
+              <label>If you choose <strong>No</strong>, could you tell us the reason? (Optional)</label></br>
+              <textarea placeholder="Enter Your Answers"></textarea>
+            </div>
+          </section>
+
+          <section>
+            <label>Please list any new skills your child has developed during the quarantine (e.g.
+              eating new
+              foods, toilet training):</label></br>
+            <textarea placeholder="Enter your anwsers"></textarea>
+          </section>
+
+          <section>
+            <label>Do you have any questions for us?</label></br>
+            <textarea placeholder="Enter your anwsers"></textarea>
+          </section>
+
+          <button type="submit" id="submit" name="submit-button">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</main>
+
+</html>

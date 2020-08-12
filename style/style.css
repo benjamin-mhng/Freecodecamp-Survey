@@ -1,75 +1,76 @@
 * {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     margin: 0;
     padding: 0;
-}
-
-#background {
+    line-height: 32px;
+  }
+  
+  #background {
     background-color: orange;
-}
-
-header {
+  }
+  
+  header {
     margin: 30px 0 30px 0;
     font-size: 26px;
-}
-
-header p {
+  }
+  
+  header p {
     font-size: 20px;
-}
-
-.container {
+  }
+  
+  .container {
     color: white;
     font-size: 20px;
     text-align: justify;
-    background-color: #00470C;
+    background-color: #00470c;
     margin: 20px 190px 20px 190px;
     padding: 30px 60px 30px 60px;
     border-radius: 30px;
-}
-
-#title {
+  }
+  
+  #title {
     font-weight: bold;
     text-align: center;
-}
-
-#description {
+  }
+  
+  #description {
     text-align: center;
-}
-
-#personal-info {
+  }
+  
+  #personal-info {
     margin-bottom: 20px;
-}
-
-section {
+  }
+  
+  section {
     margin: 30px 0 30px 0;
-}
-
-section label {
+  }
+  
+  section label {
     font-weight: lighter;
-}
-
-nav {
+  }
+  
+  nav {
     height: 50px;
     line-height: 50px;
     background-color: #196125;
     text-align: center;
-}
-
-nav a {
+  }
+  
+  nav a {
     font-size: 19px;
     text-decoration: none;
     display: inline;
     color: white;
     padding-left: 50px;
     padding-right: 50px;
-}
-
-nav a:hover {
+  }
+  
+  nav a:hover {
     color: red;
-}
-
-input[type="text"] {
-    height: 4%;
+  }
+  
+  input[type="text"] {
+    height: 30px;
     width: 100%;
     box-sizing: border-box;
     margin-top: 5px;
@@ -78,10 +79,10 @@ input[type="text"] {
     background-color: #f8f8f8;
     resize: none;
     padding-left: 12px;
-}
-
-input[type="number"] {
-    height: 4%;
+  }
+  
+  input[type="number"] {
+    height: 30px;
     width: 100%;
     box-sizing: border-box;
     margin-top: 5px;
@@ -90,9 +91,9 @@ input[type="number"] {
     background-color: #f8f8f8;
     resize: none;
     padding-left: 12px;
-}
-
-button[type="submit"] {
+  }
+  
+  button[type="submit"] {
     margin: auto;
     height: 45px;
     width: 100%;
@@ -104,9 +105,9 @@ button[type="submit"] {
     background-color: #196125;
     color: white;
     font-size: 18px;
-}
-
-textarea {
+  }
+  
+  textarea {
     width: 100%;
     height: 150px;
     padding: 12px 20px;
@@ -116,10 +117,10 @@ textarea {
     background-color: #f8f8f8;
     resize: none;
     margin-top: 5px;
-}
-
-#personal-info input {
-    height: 4%;
+  }
+  
+  #personal-info input {
+    height: 30px;
     width: 100%;
     box-sizing: border-box;
     margin-top: 5px;
@@ -128,17 +129,19 @@ textarea {
     background-color: #f8f8f8;
     resize: none;
     padding-left: 12px;
-}
-
-#yes-no {
+  }
+  
+  #yes-no {
     margin-top: 10px;
-}
-
-#list {
+  }
+  
+  #list {
     margin-left: 1.5%;
-}
-
-#dropdown {
+  }
+  
+  #dropdown {
     border: 2px solid #ccc;
     border-radius: 6px;
-}
+    height: 20px;
+  }
+  
